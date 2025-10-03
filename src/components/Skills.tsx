@@ -239,7 +239,7 @@ export default function Skills() {
               Always Learning, Always Growing
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Design is an ever-evolving field, and I'm committed to continuous learning.
+              Design is an ever-evolving field, and I&apos;m committed to continuous learning.
               Currently exploring AI-assisted design tools, advanced animation techniques,
               and emerging web technologies to stay at the forefront of creative innovation.
             </p>

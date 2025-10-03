@@ -2,18 +2,14 @@
 
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Float, Text3D, Center } from '@react-three/drei';
+import { OrbitControls, Float } from '@react-three/drei';
 import React, { useState, useEffect } from 'react';
 
 interface BannerProps {
   onNavigate: (sectionId: string) => void;
 }
 
-interface SceneProps {
-  fontError: boolean;
-}
-
-function Scene({ fontError }: SceneProps) {
+function Scene() {
   return (
     <>
       <ambientLight intensity={0.5} />
@@ -84,7 +80,6 @@ function Scene({ fontError }: SceneProps) {
 
 export default function Banner({ onNavigate }: BannerProps) {
   const [isClient, setIsClient] = useState(false);
-  const [fontError, setFontError] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -96,7 +91,7 @@ export default function Banner({ onNavigate }: BannerProps) {
       <div className="absolute inset-0 z-0">
         {isClient && (
           <Canvas camera={{ position: [0, 0, 5] }}>
-            <Scene fontError={fontError} />
+            <Scene />
           </Canvas>
         )}
       </div>

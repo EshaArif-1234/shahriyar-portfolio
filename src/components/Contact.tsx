@@ -72,10 +72,10 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Let's <span className="text-gradient">Connect</span>
+            Let&apos;s <span className="text-gradient">Connect</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Ready to bring your vision to life? Let's discuss your next project
+            Ready to bring your vision to life? Let&apos;s discuss your next project
           </p>
         </motion.div>
 
@@ -177,7 +177,7 @@ export default function Contact() {
                 Get in Touch
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                I'm always interested in new opportunities and exciting projects.
+                I&apos;m always interested in new opportunities and exciting projects.
                 Whether you have a question or just want to say hi, feel free to reach out!
               </p>
             </div>

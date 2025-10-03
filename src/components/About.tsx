@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 export default function About() {
   return (
@@ -70,7 +69,7 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a creative designer with over 3 years of experience in digital design,
+              I&apos;m a creative designer with over 3 years of experience in digital design,
               branding, and creative direction. My passion lies in crafting meaningful
               experiences that not only look beautiful but also serve a purpose.
             </p>
