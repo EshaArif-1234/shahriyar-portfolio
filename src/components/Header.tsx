@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface HeaderProps {
   activeSection: string;
@@ -40,8 +41,14 @@ export default function Header({ activeSection, onNavigate }: HeaderProps) {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold text-gradient">
-            Darphic
+          <div className="flex items-center">
+            <Image
+              src="/logo-bg.png"
+              alt="Darphic Designer"
+              width={240}
+              height={80}
+              className="h-32 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
